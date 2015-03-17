@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Comment -->
+<!--  -->
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+	<!-- Nome con cui compare l'estensione nel menù, fa casino con gli underscore _ -->
+	<name>Raster 2 Laser GCode generator</name>
+	<!-- il campo ID deve essere univoco  -->
+	<id>com.305engineering.raster2laser_gcode</id>
+	
+	<!-- Dipendenze, basta solo lo script python principale -->
+	<dependency type="executable" location="extensions">raster2laser_gcode.py</dependency>
+	<dependency type="executable" location="extensions">inkex.py</dependency>
+	    	
+	<!-- Parametri di input per lo script python che vengono visualizzati nel widget creato da inkscape-->
+	<!-- vengono generati in ordine di come vengono scritti  -->
+	
+	<!-- Titolo e descrizione -->
+	<param name="Title" type="description">Raster 2 Laser GCode generator</param>
+	<param name="Description" type="description">created by 305 Engineering</param>
+    
+	<!-- Opzioni di esportazione dell'immagine -->
+	<param name="directory" type="string"  gui-text="Export directory"></param>
+	<param name="filename" type="string"  gui-text="File Name"></param>
+	<param name="add-numeric-suffix-to-filename" type="boolean" gui-text="Add numeric suffix to filename">true</param>
+		
+	<param name="bg_color" type="enum" gui-text="Replace transparency with">
+		<_item value="#ffffff">White</_item>
+		<_item value="#000000">Black</_item>
+	</param>
+	
+	<param name="resolution" type="enum" gui-text="Resolution">
+		<_item value="1">1 pixel/mm</_item>
+		<_item value="2">2 pixel/mm</_item>
+		<_item value="5">5 pixel/mm</_item>
+		<_item value="10">10 pixel/mm</_item>
+	</param>
+		
+	<!-- Come convertire in scala di grigi -->
+	<param name="grayscale_type" type="enum" gui-text="Color to Grayscale conversion">
+		<_item value="1">0.21R + 0.71G + 0.07B</_item>
+		<_item value="2">(R+G+B)/3</_item>
+		<_item value="3">R</_item>
+		<_item value="4">G</_item>
+		<_item value="5">B</_item>
+		<_item value="6">Max Color</_item>
+		<_item value="7">Min Color</_item>
+	</param>
+	
+	<!-- Modalità di conversione in Bianco e Nero -->
+	<param name="conversion_type" type="enum" gui-text="B/W conversion algorithm ">
+		<_item value="1">B/W fixed threshold</_item>
+		<_item value="2">B/W random threshold</_item>
+		<_item value="3">Halftone</_item>
+		<_item value="4">Halftone row</_item>
+		<_item value="5">Halftone column</_item>
+		<_item value="6">Grayscale</_item>
+	</param>
+	
+	<!-- Opzioni modalita -->
+	<param name="BW_threshold" type="int" min="1" max="254" gui-text="B/W threshold">128</param>
+	
+	<param name="grayscale_resolution" type="enum" gui-text="Grayscale resolution ">
+		<_item value="1">256</_item>
+		<_item value="2">128</_item>  <!-- 256/2 -->
+		<_item value="4">64</_item>  <!-- 256/4 -->
+		<_item value="8">32</_item>  <!-- 256/8 -->
+		<_item value="16">16</_item>  <!-- 256/16 -->
+		<_item value="32">8</_item>  <!-- 256/32 -->
+	</param>	
+
+	
+	<!-- Velocità Nero e spostamento -->
+	<param name="speed_ON" type="int" min="1" max="5000" gui-text="Engraving speed">200</param>
+	
+	<!-- FLIP = coordinate Cartesiane (False) Coordinate "informatiche" (True) -->
+	<param name="flip_y" type="boolean" gui-text="Flip Y">false</param>
+
+	<!-- Homing -->
+	<param name="homing" type="enum" gui-text="Homing ?">
+		<_item value="1">G28 (Standard)</_item>
+		<_item value="2">$H (GRBL)</_item>
+		<_item value="3">No Homing</_item>
+	</param>
+	
+	<!-- Anteprima = Solo immagine BN -->
+	<param name="preview_only" type="boolean" gui-text="Preview only">false</param>
+	<param name="p_only" type="description">If "Preview only" is true the gcode file will not be generated.</param>
+
+
+	<!-- Per togliere la casella Antepima diretta bisogna sostituire <effect> con <effect needs-live-preview="false">  -->
+	<!-- <effect> -->
+	<!-- 	<effect needs-live-preview="false"> -->
+	<effect needs-live-preview="false"> 
+        <object-type>all</object-type>
+		<!-- Dove comparirà lo script all'interno del menù estensioni -->
+		<!--  " Estensioni => 305 Engineering => prova_estensione " -->
+        <effects-menu>
+            <submenu name="305 Engineering"/>
+        </effects-menu>
+    </effect>
+    
+	<!-- Script python da eseguire -->
+	<script>
+    	<command reldir="extensions" interpreter="python">raster2laser_gcode.py</command>
+    </script>
+</inkscape-extension>
