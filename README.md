@@ -16,7 +16,9 @@ Simply copy all the files in the folder "Extensions" of Inkscape
 
 for unix (& mac maybe) change the permission on the file:
 >>chmod 755 png.py
+
 >>chmod 755 raster2laser_gcode.py
+
 >>chmod 644 raster2laser_gcode.inx
 
 Required file for "Raster 2 Laser GCode generator":
