@@ -4,7 +4,7 @@
  - 
  
 #Descriptions
-Raster 2 Laser GCode generator is an extension to generate Gcode for a laser cutter/engraver, it can generate various type of outputs from a simple B&W (on/off) to a more detailed Grayscale (pwm)
+- Raster 2 Laser GCode generator is an extension to generate Gcode for a laser cutter/engraver, it can generate various type of outputs from a simple B&W (on/off) to a more detailed Grayscale (pwm)
 
 
 #Installing:
@@ -37,3 +37,9 @@ for unix (& mac maybe) change the permission on the file:
 - Step 3) To run the extension go to: Extension > 305 Engineering > Raster 2 Laser GCode generator
 
 - Step 4) Play!
+
+
+
+
+#Note
+I have created all the file except for png.py , see that file for details on the license
