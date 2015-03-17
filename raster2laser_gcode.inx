@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Comment -->
-<!--  -->
+<!-- 
+# ----------------------------------------------------------------------------
+# Copyright (C) 2014 oni305 / 305engineering <305engineering@gmail.com>
+# Original concept by oni305 /  305engineering.
+#
+# "THE MODIFIED BEER-WARE LICENSE" (Revision: my own :P):
+# <305engineering@gmail.com> wrote this file. As long as you retain this notice you
+# can do whatever you want with this stuff (except sell). If we meet some day, 
+# and you think this stuff is worth it, you can buy me a beer in return.
+#
+# The above copyright notice and this permission notice shall be
+# included in all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+# NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+# BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+# ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+# CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+# ----------------------------------------------------------------------------
+-->
 <inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
 	<!-- Nome con cui compare l'estensione nel menù, fa casino con gli underscore _ -->
 	<name>Raster 2 Laser GCode generator</name>
