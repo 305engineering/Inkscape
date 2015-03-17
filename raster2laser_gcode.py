@@ -1,7 +1,7 @@
 '''
 # ----------------------------------------------------------------------------
-# Copyright (C) 2014 oni305 / 305engineering <305engineering@gmail.com>
-# Original concept by oni305 /  305engineering.
+# Copyright (C) 2014 305engineering <305engineering@gmail.com>
+# Original concept by 305engineering.
 #
 # "THE MODIFIED BEER-WARE LICENSE" (Revision: my own :P):
 # <305engineering@gmail.com> wrote this file. As long as you retain this notice you
