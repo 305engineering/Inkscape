@@ -21,11 +21,11 @@ for unix (& mac maybe) change the permission on the file:
 
 >>chmod 644 raster2laser_gcode.inx
 
-Required file for "Raster 2 Laser GCode generator":
 
-png.py / raster2laser_gcode.inx / raster2laser_gcode.py
 
 #Usage of "Raster 2 Laser GCode generator":
+
+Required file: png.py / raster2laser_gcode.inx / raster2laser_gcode.py
 
 - Step 1) Resize the inkscape document to match the dimension of your working area (Shift+Ctrl+D)
 
