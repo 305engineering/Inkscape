@@ -7,26 +7,23 @@ Extensions for Inkscape:
 
 Simply copy all the files in the folder "Extensions" of Inkscape
 
->>Windows ) "C:\<...>\Inkscape\share\extensions"
+>Windows ) "C:\<...>\Inkscape\share\extensions"
 
->>Linux ) "/usr/share/inkscape/extensions"
+>Linux ) "/usr/share/inkscape/extensions"
 
->>Mac ) "/Applications/Inkscape.app/Contents/Resources/extensions"
+>Mac ) "/Applications/Inkscape.app/Contents/Resources/extensions"
 
 
 for unix (& mac maybe) change the permission on the file:
-
-chmod 755 png.py
-
-chmod 755 raster2laser_gcode.py
-
-chmod 644 raster2laser_gcode.inx
+>>chmod 755 png.py
+>>chmod 755 raster2laser_gcode.py
+>>chmod 644 raster2laser_gcode.inx
 
 Required file for "Raster 2 Laser GCode generator":
 
 png.py / raster2laser_gcode.inx / raster2laser_gcode.py
 
-#Usage:
+#Usage of "Raster 2 Laser GCode generator":
 
 - Step 1) Resize the inkscape document to match the dimension of your working area (Shift+Ctrl+D)
 
