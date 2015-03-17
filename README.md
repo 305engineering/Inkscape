@@ -3,15 +3,16 @@ Extensions for Inkscape:
 
  - Raster 2 Laser GCode generator
 
-Installing:
+#Installing:
 
-Step 1) Simply copy all the files in the folder "Extensions" of Inkscape
+Simply copy all the files in the folder "Extensions" of Inkscape
 
 >>Windows ) "C:\<...>\Inkscape\share\extensions"
 
 >>Linux ) "/usr/share/inkscape/extensions"
 
 >>Mac ) "/Applications/Inkscape.app/Contents/Resources/extensions"
+
 
 for unix (& mac maybe) change the permission on the file:
 
@@ -25,12 +26,12 @@ Required file for "Raster 2 Laser GCode generator":
 
 png.py / raster2laser_gcode.inx / raster2laser_gcode.py
 
-Usage:
+#Usage:
 
-Step 1) Resize the inkscape document to match the dimension of your working area (Shift+Ctrl+D)
+- Step 1) Resize the inkscape document to match the dimension of your working area (Shift+Ctrl+D)
 
-Step 2) Draw or import the image
+- Step 2) Draw or import the image
 
-Step 3) To run the extension go to: Extension > 305 Engineering > Raster 2 Laser GCode generator
+- Step 3) To run the extension go to: Extension > 305 Engineering > Raster 2 Laser GCode generator
 
-Step 4) Play!
+- Step 4) Play!
