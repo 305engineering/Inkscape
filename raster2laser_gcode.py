@@ -141,7 +141,7 @@ class GcodeExport(inkex.Effect):
 				
 			
 			pos_file_png_exported = os.path.join(self.options.directory,self.options.filename+".png") 
-			pos_file_png_BW = os.path.join(self.options.directory,self.options.filename+suffix+"BW_preview.png") 
+			pos_file_png_BW = os.path.join(self.options.directory,self.options.filename+suffix+"preview.png") 
 			pos_file_gcode = os.path.join(self.options.directory,self.options.filename+suffix+"gcode.txt") 
 			
 
