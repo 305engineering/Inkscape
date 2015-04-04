@@ -127,8 +127,8 @@ class GcodeExport(inkex.Effect):
 				suffix = "_Gray_"
 			
 			pos_file_png_exported = os.path.join(self.options.directory,self.options.filename+".png") 
-			pos_file_png_BW = os.path.join(self.options.directory,self.options.filename+suffix+"_BW_preview.png") 
-			pos_file_gcode = os.path.join(self.options.directory,self.options.filename+suffix+"_gcode.txt") 
+			pos_file_png_BW = os.path.join(self.options.directory,self.options.filename+suffix+"BW_preview.png") 
+			pos_file_gcode = os.path.join(self.options.directory,self.options.filename+suffix+"gcode.txt") 
 			
 
 			#Esporto l'immagine in PNG
