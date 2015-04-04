@@ -111,9 +111,24 @@ class GcodeExport(inkex.Effect):
 
 
 			#genero i percorsi file da usare
+			
+			suffix = ""
+			if self.options.conversion_type == 1:
+				suffix = "_BWfix_"+str(self.options.BW_threshold)+"_"
+			elif self.options.conversion_type == 2:
+				suffix = "_BWrnd_"
+			elif self.options.conversion_type == 3:
+				suffix = "_H_"
+			elif self.options.conversion_type == 4:
+				suffix = "_Hrow_"
+			elif self.options.conversion_type == 5:
+				suffix = "_Hcol_"
+			else:
+				suffix = "_Gray_"
+			
 			pos_file_png_exported = os.path.join(self.options.directory,self.options.filename+".png") 
-			pos_file_png_BW = os.path.join(self.options.directory,self.options.filename+"_BW_preview.png") 
-			pos_file_gcode = os.path.join(self.options.directory,self.options.filename+"_gcode.txt") 
+			pos_file_png_BW = os.path.join(self.options.directory,self.options.filename+suffix+"_BW_preview.png") 
+			pos_file_gcode = os.path.join(self.options.directory,self.options.filename+suffix+"_gcode.txt") 
 			
 
 			#Esporto l'immagine in PNG
