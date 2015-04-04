@@ -124,7 +124,21 @@ class GcodeExport(inkex.Effect):
 			elif self.options.conversion_type == 5:
 				suffix = "_Hcol_"
 			else:
-				suffix = "_Gray_"
+				if self.options.grayscale_resolution == 1:
+					suffix = "_Gray_256_"
+				elif self.options.grayscale_resolution == 2:
+					suffix = "_Gray_128_"
+				elif self.options.grayscale_resolution == 4:
+					suffix = "_Gray_64_"
+				elif self.options.grayscale_resolution == 8:
+					suffix = "_Gray_32_"
+				elif self.options.grayscale_resolution == 16:
+					suffix = "_Gray_16_"
+				elif self.options.grayscale_resolution == 32:
+					suffix = "_Gray_8_"
+				else:
+					suffix = "_Gray_"
+				
 			
 			pos_file_png_exported = os.path.join(self.options.directory,self.options.filename+".png") 
 			pos_file_png_BW = os.path.join(self.options.directory,self.options.filename+suffix+"BW_preview.png") 
