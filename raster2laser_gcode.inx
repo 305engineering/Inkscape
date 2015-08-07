@@ -82,6 +82,9 @@
 		<_item value="3">No Homing</_item>
 	</param>
 	
+	<param name="laseron" type="string"  gui-text="Laser ON Command">M03</param>
+	<param name="laseroff" type="string"  gui-text="Laser OFF Command">M05</param>
+	
 	<!-- Anteprima = Solo immagine BN -->
 	<param name="preview_only" type="boolean" gui-text="Preview only">false</param>
 	<param name="p_only" type="description">If "Preview only" is true the gcode file will not be generated.</param>
