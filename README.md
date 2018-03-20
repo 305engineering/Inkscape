@@ -1,10 +1,10 @@
-# Various Inkscape extensions
-
- - Raster 2 Laser GCode generator
- - 
+ # Raster 2 Laser GCode generator
  
 #Descriptions
 - Raster 2 Laser GCode generator is an extension to generate Gcode for a laser cutter/engraver (or pen plotter), it can generate various type of outputs from a simple B&W (on/off) to a more detailed Grayscale (pwm)
+
+# Modified to work with Lasersaur 
+Especially with these board you can buy to upgrade your chinese laser.
 
 
 #Installing:
@@ -16,13 +16,6 @@ Simply copy all the files in the folder "Extensions" of Inkscape
 >Linux ) "/usr/share/inkscape/extensions"
 
 >Mac ) "/Applications/Inkscape.app/Contents/Resources/extensions"
-
-
-for unix (& mac maybe) change the permission on the file:
-
->>chmod 755 for all the *.py files
-
->>chmod 644 for all the *.inx files
 
 
 
