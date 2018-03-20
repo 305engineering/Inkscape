@@ -4,7 +4,7 @@
 - Raster 2 Laser GCode generator is an extension to generate Gcode for a laser cutter/engraver (or pen plotter), it can generate various type of outputs from a simple B&W (on/off) to a more detailed Grayscale (pwm)
 
 ### Modified to work with Lasersaur 
-Especially with these board you can buy to upgrade your chinese laser.
+- Especially with these boards you can buy to upgrade your chinese lasercutter, sold on the internet.
 </br>
 
 ### Installing:
