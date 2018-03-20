@@ -3,6 +3,7 @@
 # Copyright (C) 2014 305engineering <305engineering@gmail.com>
 # Original concept by 305engineering.
 #
+#Slightly modified to work with Lasersaur (changed G00 to G0 commands)
 # "THE MODIFIED BEER-WARE LICENSE" (Revision: my own :P):
 # <305engineering@gmail.com> wrote this file. As long as you retain this notice you
 # can do whatever you want with this stuff (except sell). If we meet some day, 
