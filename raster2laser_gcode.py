@@ -26,11 +26,26 @@
 import sys
 import os
 import re
-
-sys.path.append('/usr/share/inkscape/extensions')
-sys.path.append('/Applications/Inkscape.app/Contents/Resources/extensions') 
-
 import subprocess
+
+
+def extensions_path_fallback():
+	sys.path.append('/usr/share/inkscape/extensions')
+	sys.path.append('/Applications/Inkscape.app/Contents/Resources/extensions')
+
+
+try:
+	extensions_path = subprocess.check_output(
+		['inkscape', '--extension-directory']
+	).strip()
+	if extensions_path:
+		sys.path.append(extensions_path)
+	else:
+		extensions_path_fallback()
+except subprocess.CalledProcessError:
+	extensions_path_fallback()
+
+
 import math
 
 import inkex
