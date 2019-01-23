@@ -548,7 +548,7 @@ class GcodeExport(inkex.Effect):
 			
 			
 			#Configurazioni finali standard Gcode
-			file_gcode.write('G00 X0 Y0; home\n')
+			file_gcode.write('G00 X0 Y0'+ ' F' + str(F_G00) +'; home\n')
 			#HOMING
 			if self.options.homing == 1:
 				file_gcode.write('G28; home all axes\n')
