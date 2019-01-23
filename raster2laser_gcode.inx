@@ -71,6 +71,9 @@
 	
 	<!-- Velocità Nero e spostamento -->
 	<param name="speed_ON" type="int" min="1" max="5000" gui-text="Engraving speed">200</param>
+    <param name="speed_OFF" type="int" min="1" max="5000" gui-text="Moving speed">200</param>
+    <param name="init_Z" type="int" min="-1" max="200" gui-text="Initial Z">0</param>
+    <param name="dwell" type="int" min="-1" max="1000" gui-text="Dwell">0</param>
 	
 	<!-- FLIP = coordinate Cartesiane (False) Coordinate "informatiche" (True) -->
 	<param name="flip_y" type="boolean" gui-text="Flip Y">false</param>
@@ -86,6 +89,7 @@
 	<param name="laseroff" type="string"  gui-text="Laser OFF Command">M05</param>
 	
 	<!-- Anteprima = Solo immagine BN -->
+    <param name="reset_pos" type="boolean" gui-text="Reset Position at Start">true</param>
 	<param name="preview_only" type="boolean" gui-text="Preview only">false</param>
 	<param name="p_only" type="description">If "Preview only" is true the gcode file will not be generated.</param>
 
