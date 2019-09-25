@@ -15,6 +15,8 @@ Simply copy all the files in the folder "Extensions" of Inkscape
 
 >Linux ) "/usr/share/inkscape/extensions"
 
+>Ubuntu Linux ) "username"/.config/inkscape/extensions
+
 >Mac ) "/Applications/Inkscape.app/Contents/Resources/extensions"
 
 
